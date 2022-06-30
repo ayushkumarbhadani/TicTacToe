@@ -1,10 +1,24 @@
 body
 {
+	position: relative;
 	margin:0;
 	padding:0;
 	font-family:arial;
 	background-color:#222222;
 	color:#FFD700;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.header{
+	text-align: center;
+	margin-bottom: 1rem;
+	padding: 1rem 0;
+}
+.container{
+	margin-bottom: 1rem;
 }
 .insideCard
 {
@@ -42,8 +56,6 @@ td:hover
 .card
 {
 	width:313px;
-	
-	margin:100px auto 0px;
 }
 #result
 {
@@ -73,4 +85,23 @@ td:hover
 #resetBtn:active
 {
 	background-color:#3e3e3e;
+}
+footer{
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #333;
+	padding: 1rem 0;
+	position: absolute;
+	bottom: 0;
+
+}
+footer a{
+	text-decoration: none;
+	color: #fff;
+}
+footer a:hover{
+	color: inherit;
+	text-shadow: 0px 2px 2px #8f7a00;
 }
